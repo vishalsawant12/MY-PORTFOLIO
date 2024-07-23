@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background-color: rgb(20, 41, 48);
+            color: white;
+        }
+        h1{
+            text-align: center;
+            margin: 20px;
+            font-size: 50px;
+        }
+        h2{
+            margin: 20px;
+        }
+        .skill{
+            
+            width: 500px;
+            margin: 80px auto;
+            color: aqua;
+            padding: 20px;
+            box-shadow: 0 0 50px;
+        }
+        .skill li{
+            margin: 10px;
+            padding: 10px;  
+        }
+        .bar{
+            background-color:white;
+            display: block;
+            height: 20px;
+            border: 1px solid aqua;
+            /* border-radius: 10px;  */
+            box-shadow: 0 0 20px;
+        }
+        .bar span{
+            height: 20px;
+            float: left;
+            background: linear-gradient(135deg, rgba(0,255,255 )0%,rgba(252,103,103,1) 100%);
+        
+        }
+        .html{
+            width: 90%;
+            animation: html 3s;
+        }
+        .css{
+            width: 70%;
+            animation: css 3s;
+        }
+        .bootstrap{
+            width: 60%;
+            animation: bootstrap 3s;
+        }
+        .mysql{
+            width: 50%;
+            animation: mysql 3s;
+        }
+        @keyframes html{
+             0%{width: 0%;}  
+            100%{width: 80%;}
+        }
+        @keyframes css{
+             0%{width: 0%;}  
+            100%{width: 70%;}
+        }
+        @keyframes bootstrap{
+             0%{width: 0%;}  
+            100%{width: 60%;}
+        }
+        @keyframes mysql{
+             0%{width: 0%;}  
+            100%{width: 50%;}
+        }  
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="skill">
+        <h1>My skills</h1>
+
+        <li><h2>Html</h2>
+            <span class="bar"><span class="html"></span></span>
+        </li>
+        <li><h2>Css</h2>
+            <span class="bar"><span class="css"></span></span>
+        </li>
+        <li><h2>Bootstrap</h2>
+            <span class="bar"><span class="bootstrap"></span></span>
+        </li>
+        <li><h2>Mysql</h2>
+            <span class="bar"><span class="mysql"></span></span>
+        </li>
+       
+    </div>
+    
+</body>
+</html>

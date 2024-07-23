@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(20, 41, 48);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    
+    max-width: 800px;  
+    margin: 50px auto;
+    background-color: rgb(20, 41, 48);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 50px aqua;
+}
+
+h1 {
+    text-align: center;
+    color: aqua;
+}
+span{
+    color: aqua;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: white;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type=submit]:hover {
+     background-color:  #4CAF50;  
+    box-shadow: 0 0 20px;
+}
+
+input[type=submit]:focus {
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#map {
+
+    margin-top: 20px;
+    border-radius: 8px ;
+    overflow: hidden;
+}
+</style>
+
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <p> <span>Address :</span> Room No.2452 Chawl No.139 <br>Group No 7, Vikhroli East Tagore Nagar <br>Near Dr Babasaheb Ambedkar .</p>
+            <p> <span>Email   :</span> Vssawant2306@gmail.com</p>
+            <p> <span>Phone   :</span> +91 8169312483</p>
+        </div>
+        <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.7500566757394!2d72.93205757373772!3d19.118617850636088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7ebaaaaaaab%3A0xd55b2b848f5ce02b!2sDr%20Babasaheb%20Ambedkar%20Maternity%20Hospital!5e0!3m2!1sen!2sin!4v1721562862838!5m2!1sen!2sin" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <form action="#" method="POST">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name.." required><br>
+
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Your email.." required><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- <script src=https://maps.app.goo.gl/htzSXYdTZLhjnvMC6 async defer></script> 
+   
+    <script>
+  
+
+        function initMap() {
+            // Coordinates for your location
+            var location = { lat: 40.712776, lng: -74.005974 };
+
+            // Map options
+            var mapOptions = {
+                center: location,
+                zoom: 15
+            };
+
+            // Create the map
+            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+            // Marker on the map
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Hello World!'
+            });
+        }
+    </script> -->
+</body>
+</html>
